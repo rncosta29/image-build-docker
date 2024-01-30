@@ -6,13 +6,8 @@ def BRANCH = "main"
 pipeline {
     agent any
 
-    tools {
-        jdk "java"
-        maven "maven"
-    }
-
     stages {
-        stage {
+        stage("Testando") {
             steps {
                 echo 'Hello World'
             }
