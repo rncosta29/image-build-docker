@@ -4,7 +4,9 @@ def PROJECT_REPOSITORY = "https://yaman-services@dev.azure.com/yaman-services/ef
 def BRANCH = "main"
 
 pipeline {
-    agent any
+    agent {
+        docker { image 'centos:centos7.9.2009' }
+    }
 
     stages {
         stage("Testando") {
