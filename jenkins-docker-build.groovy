@@ -16,7 +16,7 @@ pipeline {
         stage("Subindo container") {
             steps {
                 echo 'Build container'
-                cd '/var/jenkins_home/workspace/build-image-docker'
+                sh 'cd /var/jenkins_home/workspace/build-image-docker'
                 sh 'docker build --file jmeter-server-image.dockerfile -t yaman-sre-jmeter-node-container:latest --no-cache=true --build-arg build_job_name=${JOB_NAME} --build-arg build_job_number=${JOB_NUMBER} --build-arg build_date=202401 .'
             }
         }
