@@ -6,9 +6,7 @@ def BRANCH = "main"
 pipeline {
     agent any
 
-    tools {
-        jdk "java"
-        maven "maven"
+    tools{
         "org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'docker"
     }
 
