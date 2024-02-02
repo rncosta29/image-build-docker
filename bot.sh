@@ -9,7 +9,7 @@ cd /opt/yaman/jmeter
 
 #clonando jmeter
 #git clone https://$(System.AccessToken)@dev.azure.com/bancotoyota/Devops-Corporativo/_git/scripts-yaman
-git clone https://$1@$2
+git clone https://yaman-apm@dev.azure.com/yaman-apm/YAMAN%20-%20Yaman%20Performance%20Tool/_git/apm-esteira-azure-bots
 #git clone https://bancotoyota@dev.azure.com/bancotoyota/APM/_git/APM
  
 #permissão no robô
